@@ -120,6 +120,7 @@ nav ul li { padding-right: 2em; }
 
 section	{
 	width: 100%; 
+    min-height: 100vh;
 	padding-top: 350px;
 }
 
@@ -129,6 +130,7 @@ section	{
 	section	{
 		width: 25%; 
 		height: 100%;
+        min-height: auto;
 		float: left; 
 		padding-top: 270px; 
 		padding-bottom: 175px;
