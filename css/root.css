@@ -1,0 +1,15 @@
+/**
+ * -------------------------------------------------------- 
+ * Custom properties
+ * -------------------------------------------------------- */
+
+:root {
+	--font-body: 'Red Hat Display', sans-serif;
+    
+    --col-text: #3f4451;
+	--col-text-light: #9f9f9f;
+	--col-text-reverse: #fff;
+    
+	--col-page: #fff;
+    --col-border: #eee;
+}

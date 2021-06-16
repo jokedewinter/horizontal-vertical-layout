@@ -1,0 +1,187 @@
+/*
+Website: http://www. ..
+Description: A horizontal experiment
+Author: Joke De Winter 
+Author URI: http://www.jokedewinter.co.uk
+Version: 2 
+Date: June 14, 2021
+Type: screen.css
+*/
+
+@import url(reset.css);
+@import url(root.css);
+
+/**
+ * -------------------------------------------------------- 
+ * Global site settings
+ * -------------------------------------------------------- */
+
+html { font-size: 62.5%; }
+
+body {
+    margin: 0 auto;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+	
+	background-color: var(--col-page);
+	color: var(--col-text);
+}
+
+/*
+ * Widths for wide and narrow viewports.
+ * On wide viewports the width needs to exceed the viewport,
+ * to allow for horizontal scrolling. */
+
+body {	
+	width: 100%; 
+	max-width: 60em; 
+}
+
+@media screen and ( min-width: 65em ) {	
+
+	body {	
+		width: 400%; 
+		max-width: 500em;  
+		height: 100vh;
+	}
+}
+
+body > * { padding: 2em; }
+
+
+/**
+ * -------------------------------------------------------- 
+ * Typography
+ * -------------------------------------------------------- */
+
+h1 {
+	font-size: 3.2rem; 
+    line-height: 1.2;
+	padding: 20px 0; 
+}
+
+h2 {
+	font-size: 2.4rem; 
+	padding: 0 0 20px 0; 
+}
+
+p { padding: 0 0 10px 0; }
+
+header p { 
+    font-size: 1.6rem;
+    max-width: 55ch; 
+}
+
+
+/**
+ * -------------------------------------------------------- 
+ * Links
+ * -------------------------------------------------------- */
+
+a {	
+	color:inherit; 
+	text-decoration:none; 
+}
+
+a:hover	{ text-decoration:underline; }
+
+
+/**
+ * -------------------------------------------------------- 
+ * Header
+ * -------------------------------------------------------- */
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2em; 
+	display: flex;
+	flex-direction: column-reverse;
+	background-color: rgba(256, 256, 256, 0.9);
+}
+
+nav ul { display: flex; }
+nav ul li { padding-right: 2em; }
+
+
+/**
+ * -------------------------------------------------------- 
+ * Layout
+ * -------------------------------------------------------- */
+
+#one { background-color: #e78a5f; } 
+#two { background-color: #aac582; } 
+#three { background-color: #a0bded; } 
+#four { background-color: #e3e0d9; } 
+
+section	{
+	width: 100%; 
+	padding-top: 350px;
+}
+
+
+@media screen and ( min-width: 65em ) {	
+
+	section	{
+		width: 25%; 
+		height: 100%;
+		float: left; 
+		padding-top: 270px; 
+		padding-bottom: 175px;
+	}
+}
+
+
+/**
+ * -------------------------------------------------------- 
+ * Inside section
+ * -------------------------------------------------------- */
+
+aside {
+	padding: 1.5em;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and ( max-width: 64.99em )  {
+	
+	aside {
+		margin-top: 3em;
+		margin-bottom: 8em;
+	}
+}
+
+@media screen and ( min-width: 65em ) {	
+	
+	.wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-column-gap: 7em;
+	}
+	
+	aside {
+		align-self: center;
+		padding: 3em;
+	}
+}
+
+
+/**
+ * -------------------------------------------------------- 
+ * Footer
+ * -------------------------------------------------------- */
+
+footer {
+	position: fixed; 
+	bottom: 0; 
+	width: 100%; 
+	margin-top: 2em;
+    padding: 0.5em 2em 0 2em;
+	font-size: 1rem; 
+	background-color: var(--col-text); 
+	color: var(--col-text-light); 
+}

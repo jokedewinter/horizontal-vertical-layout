@@ -1,0 +1,49 @@
+/**
+ * -------------------------------------------------------- 
+ * Reset
+ * -------------------------------------------------------- */
+
+* { 
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section { display: block; }
+
+nav ul li { list-style: none; }
+nav ul li::before { content: "\200B"; }
+    
+// Overrides the bullets inside the viewport setting on narrow devices
+@media screen and ( max-width: 37.49em ) {
+    nav ul li  { margin-left: 0; }
+}
+
+button, 
+fieldset, 
+input, 
+textarea, 
+select, 
+fieldset {
+	background: none;
+	border: none;
+	border-radius: 0px;
+	outline: 0;
+	-webkit-appearance: none;
+}
+
